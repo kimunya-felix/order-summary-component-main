@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,800&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-image: url("images/pattern-background-desktop.svg");
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .card{
+      display: grid;
+      grid-template-columns: 400px;
+      grid-template-rows: 200px 400px;
+      grid-template-areas: "image" "textdiv";
+
+      font-family: 'Red Hat Display', sans-serif;
+      border-radius: 5px 5px 15px red;
+      text-align: center;
+    }
+    .card-image{
+      grid-area: image;
+      background: url("images/illustration-hero.svg");
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background-size: cover;
+    }
+    .card-text{
+      grid-area: textdiv;
+      background-color: white;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+    }
+    .musiclogo{
+      background-color: hsl(225, 100%, 98%);
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .paydiv{
+      background-color: hsl(223, 47%, 23%);
+      margin: 10px;
+      padding: 15px;
+      border-radius: 15px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-image"></div>
+  <div class="card-text">
+    <h2 class="order-span">Order Summary</h2>
+    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+      <div class="musiclogo">
+        <img src="images/icon-music.svg" alt="icon-music">
+        <label><b>Annual Plan</b><br> $59.99/year</label>
+        <label><a href="#">Change</a> </label>
+      </div>
+      <div class="paydiv"><b>Proceed to Payment</b></div>
+      <div class="canceldiv" style="color: hsl(224, 23%, 55%); margin-top: 20px;" >Cancel Order</div>
+  </div> <!--/cardtext-->
+
+  </div>
+  
+
+
+  
+
+  <!-- 
+
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
